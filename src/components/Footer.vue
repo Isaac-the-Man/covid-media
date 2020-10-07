@@ -15,7 +15,4 @@ export default {
   a {
     color: white;
   }
-  /*.footer {*/
-  /*  bottom: 10px;*/
-  /*}*/
 </style>

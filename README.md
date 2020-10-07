@@ -1,24 +1,9 @@
 # covid-media
 
-## Project setup
-```
-npm install
-```
+[![Netlify Status](https://api.netlify.com/api/v1/badges/697ee665-616f-423e-b301-9fa31830db12/deploy-status)](https://app.netlify.com/sites/covid-media/deploys)
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+Covid-19, better known as the Coronavirus, has brought chaos to wherever it came across. To stop the spreading virus, various media reported stats and related facts to audience around the world. Please take this 3-minute survey to help better understand the effect of media on the public understanding of covid-19.
 
-### Compiles and minifies for production
-```
-npm run build
-```
+Study conducted by Yu-Kai "Steven" Wang @2020, Rensselaer Polytechnic Institute
 
-### Lints and fixes files
-```
-npm run lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+Site: https://covid-media.netlify.app/

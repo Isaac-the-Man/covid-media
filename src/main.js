@@ -7,6 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import firebase from "firebase/app"
+import { VueReCaptcha } from 'vue-recaptcha-v3'
 
 
 // initialize firebase
@@ -29,6 +30,12 @@ Vue.component('font-awesome-icon', FontAwesomeIcon);
 Vue.config.productionTip = false;
 
 Vue.use(BootstrapVue);
+Vue.use(VueReCaptcha, {
+  siteKey: '6LeHg9QZAAAAAMdRBOzGNU0_1Fs-GsT_MFtLusN7',
+  loaderOptions: {
+    useRecaptchaNet: true
+  }
+});
 
 new Vue({
   render: h => h(App),

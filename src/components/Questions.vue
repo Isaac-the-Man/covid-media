@@ -112,6 +112,7 @@
 import firebase from 'firebase/app'
 import 'firebase/firestore'
 
+
 export default {
   name: "Questions",
   data() {
@@ -446,6 +447,15 @@ export default {
     async pushData(evt) {
       evt.preventDefault();
       this.progress++;
+      // recaptcha
+      await this.$recaptchaLoaded();
+      const token = await this.$recaptcha('submit');
+      const isVerified = await this.verify(token);
+      if (!isVerified) {
+        console.warn('bot detected');
+        return;
+      }
+      // push to db
       const db = firebase.firestore();
       try {
         await db.collection('data').add(this.form);
