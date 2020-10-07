@@ -463,6 +463,12 @@ export default {
       } catch (e) {
         console.error('An error occurred while sending form data');
       }
+    },
+    async verify(token) {
+      const res = await this.axios.post('https://covid-media.netlify.app/.netlify/functions/verify', {
+        token: token
+      });
+      return res.status === 200 && res.data.success && res.data.score > 0.3;
     }
   }
 }

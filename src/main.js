@@ -8,6 +8,8 @@ import { faGithub } from '@fortawesome/free-brands-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 import firebase from "firebase/app"
 import { VueReCaptcha } from 'vue-recaptcha-v3'
+import axios from 'axios'
+import VueAxios from "vue-axios"
 
 
 // initialize firebase
@@ -36,6 +38,7 @@ Vue.use(VueReCaptcha, {
     useRecaptchaNet: true
   }
 });
+Vue.use(VueAxios, axios);
 
 new Vue({
   render: h => h(App),
