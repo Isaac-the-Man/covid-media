@@ -10,7 +10,7 @@
       <b-row>
         <b-col></b-col>
         <b-col md="8">
-          <Home @start="isStart = true;"></Home>
+          <router-view @start="isStart = true;"/>
         </b-col>
         <b-col></b-col>
       </b-row>
@@ -20,13 +20,11 @@
 </template>
 
 <script>
-import Home from "@/components/Home"
 import Footer from "@/components/Footer"
 
 export default {
   name: 'App',
   components: {
-    Home,
     Footer
   },
   data() {

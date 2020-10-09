@@ -10,7 +10,7 @@ import firebase from "firebase/app"
 import { VueReCaptcha } from 'vue-recaptcha-v3'
 import axios from 'axios'
 import VueAxios from "vue-axios"
-
+import router from "@/router/route"
 
 // initialize firebase
 const firebaseConfig = {
@@ -40,6 +40,8 @@ Vue.use(VueReCaptcha, {
 });
 Vue.use(VueAxios, axios);
 
+
 new Vue({
+  router,
   render: h => h(App),
 }).$mount('#app');
