@@ -20,7 +20,8 @@
     "vue-axios": "^2.1.5",
     "vue-chartjs": "^3.5.1",
     "vue-recaptcha-v3": "^1.9.0",
-    "vue-router": "^3.4.6"
+    "vue-router": "^3.4.6",
+    "vuewordcloud": "^18.7.12"
   },
   "devDependencies": {
     "@vue/cli-plugin-babel": "~4.5.0",

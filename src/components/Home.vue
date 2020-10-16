@@ -8,6 +8,10 @@
           survey to help better understand the effect of media on the public understanding of covid-19.
         </p>
         <b-button @click="start" pill class="shadow" variant="primary">Start</b-button>
+        <div class="small">
+          or<br>
+          <b-link to="/stats"><u>View Stats</u></b-link>
+        </div>
       </div>
       <Questions v-else></Questions>
     </transition>
